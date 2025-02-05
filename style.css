@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #00aaff, #ffffff);
+  font-family: "Roboto Slab", serif;
+}
+
+.deskripsi {
+  text-align: center;
+  padding: 10px;
+}
+
+.deskripsi h1 {
+  font-size: 20px;
+}
+
+.deskripsi p {
+  text-align: left;
+}
+
+.rumus h4 {
+  margin-left: 10px;
+}
+
+.rumus p {
+  margin-left: 10px;
+}
+
+.kategori {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 10%;
+  height: 10%;
+  background: linear-gradient(to right, #00aaff, #ffffff);
+  color: #222;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+input {
+  width: 50%;
+  height: 30px;
+}
+
+.btn {
+  color: #ffffff;
+  background: rgb(54, 54, 255);
+  width: 20%;
+  height: 40px;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 21px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hasil {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  table {
+    width: 100%;
+  }
+
+  .card-item {
+    width: 60%;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+  }
+
+  .btn {
+    width: 40%;
+  }
+
+  .hasil {
+    text-align: center;
+  }
+}
