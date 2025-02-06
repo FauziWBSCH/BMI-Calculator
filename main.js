@@ -9,14 +9,23 @@ function calculateBmi() {
 
   const hasilBmi = numBerat / konversTinggi ** 2;
 
+  const printHasil = hasilBmi.toFixed(1);
+
   if (hasilBmi < 18.5) {
-    document.getElementById("result").textContent = "Berat Anda Kurang";
+    document.getElementById(
+      "result"
+    ).textContent = `Hasil BMI Anda ${printHasil}, Berat Anda Kurang`;
   } else if (hasilBmi >= 18.5 && hasilBmi < 25) {
-    document.getElementById("result").textContent = "Berat Badan Anda Ideal";
+    document.getElementById(
+      "result"
+    ).textContent = `Hasil BMI Anda ${printHasil}, Berat Badan Anda Ideal`;
   } else if (hasilBmi >= 25 && hasilBmi < 30) {
-    document.getElementById("result").textContent =
-      "Anda Kelebihan Berat Badan";
+    document.getElementById(
+      "result"
+    ).textContent = `Hasil BMI Anda ${printHasil}, Anda Kelebihan Berat Badan`;
   } else if (hasilBmi >= 30) {
-    document.getElementById("result").textContent = "Anda Obesitas";
+    document.getElementById(
+      "result"
+    ).textContent = `Hasil BMI Anda ${printHasil}, Anda Obesitas`;
   }
 }
