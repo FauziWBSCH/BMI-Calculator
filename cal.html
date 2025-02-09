@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CalculatorBMI - Page</title>
+    <title>Calculator - Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +15,13 @@
   <body>
     <!-- konten start -->
     <div class="container">
+      <label for="jenis_kelamin">Jenis Kelamin</label>
+      <select name="jenis_kelamin" id="jenis_kelamin" required>
+        <option value="pick">Pilih</option>
+        <option value="pria">Pria</option>
+        <option value="perempuan">Perempuan</option>
+      </select>
+      <br /><br />
       <label for="berat">Masukkan Berat Badan</label>
       <input
         type="number"
@@ -35,10 +42,36 @@
       />
       <br />
       <br />
-      <button type="submit" class="btn" onclick="calculateBmi()">Hitung</button>
+      <button type="submit" class="btn" onclick="calculateBmi()" id="submit">
+        Hitung
+      </button>
       <div class="hasil">
         <h2>Hasil</h2>
-        <h3><span id="result"></span></h3>
+        <table border="1" id="calculateBMI">
+          <tr>
+            <td>BMI Anda</td>
+            <td><span id="result_bmi"></span></td>
+          </tr>
+          <tr>
+            <td>Kategori BMI</td>
+            <td><span id="result_kategori"></span></td>
+          </tr>
+          <tr>
+            <td>Berat Badan Anda</td>
+            <td><span id="berat_badan"></span></td>
+          </tr>
+          <tr>
+            <td>Berat Badan Ideal</td>
+            <td><span id="return_ideal"></span></td>
+          </tr>
+          <tr>
+            <td>Rekomendasi</td>
+            <td><span id="return_rekomendasi"></span></td>
+          </tr>
+        </table>
+      </div>
+      <div style="margin-top: 10px">
+        <h3><span id="response"></span></h3>
       </div>
     </div>
     <!-- konten end -->

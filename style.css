@@ -35,13 +35,13 @@ table {
   width: 50%;
   border-collapse: collapse;
 }
-th,
+tr,
 td {
-  border: 1px solid black;
+  border: 2px solid #003047;
   padding: 8px;
   text-align: left;
 }
-th {
+tr {
   background-color: #f2f2f2;
 }
 
@@ -71,6 +71,11 @@ a {
 .container {
   padding: 10px;
   margin-right: 10px;
+}
+
+select {
+  width: 10%;
+  height: 25px;
 }
 
 input {
@@ -107,6 +112,11 @@ input {
   font-size: 14px;
 }
 
+#calculateBMI {
+  display: none;
+  border-collapse: collapse;
+}
+
 @media screen and (max-width: 500px) {
   table {
     width: 100%;
@@ -114,6 +124,11 @@ input {
 
   .card-item {
     width: 60%;
+  }
+
+  select {
+    width: 50%;
+    height: 30px;
   }
 
   input {
