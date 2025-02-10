@@ -117,6 +117,59 @@ input {
   border-collapse: collapse;
 }
 
+.navbar {
+  background-color: #001031;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-content {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+.nav-content h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.nav-content ul {
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-content ul li {
+  display: inline-block;
+}
+
+.nav-content ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10-x;
+}
+
+nav ul li a:hover {
+  color: #00aaff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-cta {
+  background: linear-gradient(to right, #00aaff, #ffffff);
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 500px) {
   table {
     width: 100%;
@@ -142,5 +195,10 @@ input {
 
   .hasil {
     text-align: center;
+  }
+
+  nav ul li a:hover {
+    color: #00aaff;
+    cursor: pointer;
   }
 }
